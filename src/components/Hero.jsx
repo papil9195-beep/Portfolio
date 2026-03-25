@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin } from "lucide-react";
+import meImage from "../assets/me.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 16 },
@@ -111,7 +112,7 @@ export default function Hero() {
                   />
                   <div className="aspect-[4/5] w-full">
                     <img 
-                      src="/src/assets/me.jpg" 
+                      src={meImage}
                       alt="Muheez" 
                       className="w-full h-full object-cover rounded-2xl" 
                     />
