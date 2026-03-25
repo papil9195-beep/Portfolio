@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #070a08;
+  --bg2:#0b120f;
+  --card: rgba(255,255,255,0.04);
+  --card2: rgba(255,255,255,0.06);
+  --stroke: rgba(255,255,255,0.10);
+
+  /* soft green (not flashy) */
+  --g1:#9fb7a5;  /* mint-gray */
+  --g2:#6f8f79;  /* muted green */
+  --g3:#2f5a40;  /* deep green */
+}
+
+html, body {
+  background: radial-gradient(1200px 800px at 50% 0%, rgba(47,90,64,0.22), transparent 55%),
+              radial-gradient(900px 600px at 20% 30%, rgba(159,183,165,0.10), transparent 60%),
+              linear-gradient(180deg, var(--bg), var(--bg2));
+  color: rgba(255,255,255,0.86);
+}
+
+::selection { background: rgba(159,183,165,0.25); }
+
+.glass {
+  background: linear-gradient(180deg, var(--card), var(--card2));
+  border: 1px solid var(--stroke);
+  backdrop-filter: blur(14px);
+}
+
+.gridGlow {
+  background-image:
+    radial-gradient(circle at 50% 25%, rgba(159,183,165,0.10), transparent 55%),
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: auto, 80px 80px, 80px 80px;
+  background-position: center, center, center;
+}
+
+.softRing {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.08),
+    0 0 40px rgba(159,183,165,0.10);
+}
+
+a, button { -webkit-tap-highlight-color: transparent; }
