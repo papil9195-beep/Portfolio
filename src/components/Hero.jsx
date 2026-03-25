@@ -94,7 +94,7 @@ export default function Hero() {
               </motion.div>
             </div>
 
-            {/* Portrait card (drop your image later) */}
+            {/* Portrait card */}
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1, transition: { delay: 0.25, duration: 0.6 } }}
@@ -109,12 +109,12 @@ export default function Hero() {
                         "radial-gradient(500px 300px at 50% 20%, rgba(159,183,165,0.18), transparent 55%)",
                     }}
                   />
-                  <div className="aspect-[4/5] w-full grid place-items-center">
-                    <p className="text-white/60 text-sm px-6 text-center">
-                      Add your photo: <code className="text-white/80">src/assets/me.jpg</code>
-                      <br />
-                      Then replace this box with an <code className="text-white/80">&lt;img /&gt;</code>.
-                    </p>
+                  <div className="aspect-[4/5] w-full">
+                    <img 
+                      src="/src/assets/me.jpg" 
+                      alt="Muheez" 
+                      className="w-full h-full object-cover rounded-2xl" 
+                    />
                   </div>
                 </div>
 

@@ -34,7 +34,7 @@ export default function Projects() {
             <h2 className="mt-3 text-2xl sm:text-3xl font-semibold text-white">Selected work</h2>
           </div>
           <p className="text-white/60 text-sm max-w-md">
-            Keep it tight: 2–4 strong projects beats 12 weak ones.
+            Keep it focused: 2–4 strong projects beats 12 weak ones.
           </p>
         </div>
 
