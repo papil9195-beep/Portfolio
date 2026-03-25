@@ -5,7 +5,7 @@ const projects = [
   {
     name: "Real Estate Landing",
     desc: "Property-focused website with strong layout and high conversion design.",
-    live: "https://landing-page-for-real-estate-m6n0p3czy-papil9195-8416s-projects.vercel.app/",
+    live: "https://landing-page-for-real-estate.vercel.app/",
     code: "https://github.com/",
     tags: ["Frontend", "Brand", "Conversion"],
   },
